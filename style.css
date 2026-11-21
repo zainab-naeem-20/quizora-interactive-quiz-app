@@ -1,0 +1,98 @@
+:root {
+  /* Primary Colors */
+  --lavender: #CDB4DB;
+  --light-lavender: #E6D6F2;
+  --baby-pink: #FFC8DD;
+  --soft-pink: #FFE5EC;
+  --dark-purple: #3B245C;
+  --deep-purple: #241638;
+
+  /* Background Colors */
+  --bg-primary: #FBF7FF;
+  --bg-secondary: #F3EAFB;
+  --card-bg: #FFFFFF;
+
+  /* Text Colors */
+  --text-primary: #352344;
+  --text-secondary: #887694;
+  --text-light: #FFFFFF;
+
+  /* Accent Colors */
+  --accent-purple: #9D72C7;
+  --accent-pink: #F4A6C1;
+  --border-color: #E8DDF0;
+
+  /* Effects */
+  --soft-shadow: 0 4px 15px rgba(59, 36, 92, 0.10);
+  --card-radius: 18px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.nav-container{
+    background-color: var(--deep-purple);
+    position: sticky;
+    width: 100%;
+    height: 80px;
+    box-shadow: var(--soft-shadow);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.logo{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo p{
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--accent-purple);
+    border-radius: 95px;
+    font-size: 24px;
+    background: var(--accent-purple);
+}
+
+.logo h1{
+    font-size: 34px;
+    color: var(--light-lavender);
+    font-weight: 700;
+}
+
+.center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.center ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--accent-pink);
+    font-size: 20px;
+    font-weight: 800;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+li a:hover{
+    color: #E6D6F2;
+    border-bottom: 2px solid var(--bg-secondary);
+}
