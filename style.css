@@ -62,6 +62,12 @@
     background: var(--accent-purple);
 }
 
+.logo p:hover{
+    transform: translateY(-5px);
+    background-color: #352344;
+    border: 2px solid var(--baby-pink);
+}
+
 .logo h1{
     font-size: 34px;
     color: var(--light-lavender);
@@ -70,7 +76,7 @@
 
 .center{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     
 }
@@ -95,4 +101,30 @@ li a{
 li a:hover{
     color: #E6D6F2;
     border-bottom: 2px solid var(--bg-secondary);
+    transform: translateY(-5px);
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    border: 2px solid  #9D72C7;
+    border-radius: 85px;
+    background: var(--light-lavender);
+    color: #241638;
+    font-size: 16px;
+    font-weight: 800;
+    transition: all 0.5s ease;
+}
+
+button:hover{
+    background-color: #352344;
+    border: 2px solid var(--accent-pink);
+    color: var(--light-lavender);
+    transform: translateY(-4px);
 }
