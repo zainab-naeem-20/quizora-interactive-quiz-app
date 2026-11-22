@@ -23,7 +23,7 @@
   --border-color: #E8DDF0;
 
   /* Effects */
-  --soft-shadow: 0 4px 15px rgba(59, 36, 92, 0.10);
+  --soft-shadow: 0 4px 15px rgba(79, 41, 133, 0.1);
   --card-radius: 18px;
 }
 
@@ -31,18 +31,20 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav-container{
     background-color: var(--deep-purple);
-    position: sticky;
+    position: fixed;
     width: 100%;
     height: 80px;
     box-shadow: var(--soft-shadow);
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    border-radius: 85px;
+    margin-top: 15px;
 }
 
 .logo{
@@ -50,6 +52,7 @@
     gap: 12px;
     align-items: center;
     justify-content: space-between;
+    margin-left: 15px;
 }
 
 .logo p{
@@ -60,6 +63,7 @@
     border-radius: 95px;
     font-size: 24px;
     background: var(--accent-purple);
+    transition: all 0.3s ease;
 }
 
 .logo p:hover{
@@ -96,6 +100,7 @@ li a{
     font-weight: 800;
     border-bottom: 2px solid transparent;
     transition: all 0.3s ease;
+    letter-spacing: 1px;
 }
 
 li a:hover{
@@ -108,10 +113,11 @@ li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
+    margin-right: 15px;
 }
 
-button{
+.button{
     padding: 10px 20px;
     border: 2px solid  #9D72C7;
     border-radius: 85px;
@@ -120,6 +126,7 @@ button{
     font-size: 16px;
     font-weight: 800;
     transition: all 0.5s ease;
+    
 }
 
 button:hover{
@@ -127,4 +134,280 @@ button:hover{
     border: 2px solid var(--accent-pink);
     color: var(--light-lavender);
     transform: translateY(-4px);
+}
+
+/* Home section */
+
+.hero-container{
+    background: var(--lavender);
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.left img{
+    width: 500px;
+    height: 400px;
+}
+
+.right{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 50%;
+}
+
+.tag{
+    border: 2px solid var(--deep-purple);
+    padding: 5px 15px;
+    border-radius: 75px;
+    background-color: var(--baby-pink);
+    color: var(--deep-purple);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.right h1{
+    font-weight: 900 !important;
+    font-size: 45px !important;
+    font-style: italic;
+    color: var(--deep-purple);
+}
+
+.tag2{
+    font-weight: 900 !important;
+    border: 2px solid var(--deep-purple);
+    padding: 5px 15px;
+    border-radius: 75px;
+    background-color: var(--baby-pink);
+    color: var(--deep-purple);
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#start{
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 2px solid  var(--deep-purple);
+    border-radius: 85px;
+    background: var(--baby-pink);
+    color: var(--dark-purple);
+    font-size: 18px;
+    font-weight: 800;
+    transition: all 0.5s ease;
+}
+
+#start:hover{
+    background-color: #352344;
+    border: 2px solid var(--accent-pink);
+    color: var(--light-lavender);
+    transform: translateX(4px);
+}
+
+
+/* Topics Section */
+
+.topics-section{
+    padding: 80px 50px;
+    background-color: var(--accent-purple);
+}
+
+.topics-heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-tag{
+    color: var(--deep-purple);
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.topics-heading h1{
+    font-size: 38px;
+    color: var(--deep-purple);
+    margin-bottom: 15px;
+}
+
+.topics-heading > p:last-child{
+    color: var(--deep-purple);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+/* Features */
+
+.features-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.feature{
+     border-top: 5px solid var(--baby-pink);
+     border-radius: 80px;
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+}
+
+.feature span{
+    font-size: 35px;
+}
+
+.feature h3{
+    color: var(--light-lavender);
+    margin: 12px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.feature p{
+    color: var(--card-bg);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Topic Cards */
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.topic-card{
+    background-color: var(--dark-purple);
+    width: 25%;
+    padding: 30px 25px;
+    border: 2px solid var(--baby-pink);
+    border-radius: var(--card-radius);
+    box-shadow: var(--soft-shadow);
+    transition: all 0.3s ease;
+}
+
+.topic-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(59, 36, 92, 0.15);
+}
+
+.card-icon{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.card-label{
+    color: var(--text-light);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.topic-card h2{
+    color: var(--accent-pink);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.topic-card > p:not(.card-label){
+    color: var(--bg-primary);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.card-bottom{
+    color: var(--light-lavender);
+    font-weight: 800;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Individual Card Accents */
+
+.html-card{
+    border-top: 5px solid var(--accent-pink);
+}
+
+.css-card{
+    border-top: 5px solid var(--lavender);
+}
+
+.js-card{
+    border-top: 5px solid #F5D77A;
+}
+
+.general-card{
+    border-top: 5px solid #A8D8B9;
+}
+
+.footer {
+    background-color: var(--deep-purple);
+    padding: 35px 7%;
+    color: var(--lavender);
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.footer-brand h2 {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.footer-brand p {
+    color: var(--text-secondary);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--bg-primary);
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-purple);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--border-color);
+    padding-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-secondary);
+    font-size: 13px;
 }
