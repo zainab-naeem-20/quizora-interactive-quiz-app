@@ -22,6 +22,17 @@
             </ul>
           </div>
           <div class="btn">
+            <button
+              class="menu-toggle"
+              id="menuToggle"
+              type="button"
+              aria-label="Open navigation"
+              aria-expanded="false"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
             <button type="button" class="button" id="themeToggle">
               Light ☀️
             </button>
@@ -116,25 +127,51 @@
         </div>
       </div>
     </section>
+    <section id="quizArea"></section>
 
-    <footer class="footer">
-    <div class="footer-top">
-        <div class="footer-brand">
+    <section id="connect">
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-brand">
             <h2>🧠 Quizora</h2>
             <p>Think. Play. Learn.</p>
-        </div>
+            <p class="brand-description">
+              Challenge your mind, explore new topics and make learning fun!
+            </p>
 
-        <div class="footer-links">
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/zainab-naeem-1ab38a312/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn ↗
+              </a>
+
+              <a
+                href="https://github.com/zainab-naeem-20"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-navigation">
+            <h3>Quick Links</h3>
             <a href="#home">Home</a>
             <a href="#topics">Explore Topics</a>
-            <a href="#contact">Contact</a>
+            <a href="#connect">Contact</a>
+          </div>
         </div>
-    </div>
 
-    <div class="footer-bottom">
-        <p>© 2026 Quizora</p>
-        <p>Developed By Zainab Naeem</p>
-    </div>
-</footer>
+        <div class="footer-bottom">
+          <p>© 2026 Quizora. All rights reserved.</p>
+          <p>Developed with 💜 by Zainab Naeem</p>
+        </div>
+      </footer>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
